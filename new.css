@@ -24,3 +24,15 @@ p{
 .puppy{
   border: 8px solid darkblue;
 }
+.surround li span {
+  color: purple;
+}
+.box img{
+  width: 100%;
+}
+.box {
+  margin: 50px 100px;
+  padding: 50px 20px 5px;
+  width: 50%;
+  border: 5px solid orange;
+}
