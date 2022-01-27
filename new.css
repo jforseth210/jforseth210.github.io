@@ -1,0 +1,26 @@
+h1{
+  color: red;
+  font-size: 100px;
+  background-color: yellow;
+}
+
+h2{
+  color: blue;
+  border: 10px solid red
+}
+
+p{
+   font-family: Arial, sans-serif
+}
+
+.lamp{
+  color: yellow;
+  background: #99EFFF;
+}
+
+#window{
+  color: orange
+}
+.puppy{
+  border: 8px solid darkblue;
+}
