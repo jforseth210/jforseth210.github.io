@@ -1,0 +1,23 @@
+html, body{
+    margin:0;
+    padding:0;
+}
+header,nav,section,footer{
+    /*border: 1px solid black;*/
+}
+#wrap{
+    width: 70%;
+    padding: 0% 15%;
+}
+header img{
+    width: 100%;
+}
+nav{
+    background-color: #0b3d91;
+}
+nav li{
+    display: inline;
+}
+nav a{
+    color: white;
+}
