@@ -1,0 +1,55 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #ddd url("mountain.jpg") no-repeat fixed;
+    background-size: cover;
+}
+#wrap {
+    margin: 0 auto;
+    width: 75%;
+}
+header {
+    text-align: center;
+    position: relative;
+}
+header img {
+    width: 20%;
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+}
+header, nav, section, footer {
+    background: white;
+    margin: 10px;
+}
+.one, .two, .three{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 10px;
+}
+section {
+    overflow: auto;
+    padding:20px;
+    position: relative;
+}
+.two {
+    background-color: red;
+    padding:0;
+}
+figure {
+    background: black;
+    width: 29%;
+    padding: 1%;
+    float: left;
+    margin:1%;
+}
+figure img{
+    width: 100%;
+}
+figcaption {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
