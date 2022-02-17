@@ -1,0 +1,88 @@
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #000 url("bg.jpg") no-repeat center top;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+#wrap {
+	width: 1000px;
+	margin: 0 auto;
+}
+header {
+	clear: both;
+	text-align:center;
+}
+#logo {
+	padding: 10px;
+}
+nav {
+	padding: 10px;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+nav li {
+	display: inline;
+	margin: 0 30px;
+}
+nav a {
+	color: #133450;
+	font-size:30px;
+	text-decoration:none;
+	font-weight: bold;
+	font-family: 'Permanent Marker', cursive;
+}
+nav a:hover {
+	color: white;
+}
+section {
+	background-color:rgba(0,0,0,0.3);
+}
+.welcome {
+	padding: 15px 20px;
+	margin: 20px 0;
+	overflow: auto;
+	font-family: Georgia, serif;
+}
+footer {
+	background-color: transparent;
+	padding: 10px;
+	color: white;
+	text-align: center;
+	clear: both;
+}
+footer a {
+	color: #8CF0EF;
+}
+.welcome h1 {
+	font-size: 72px;
+	color:#fff;
+	margin:0 0 15px 0;
+}
+.welcome h2 {
+	font-size: 25px;
+	color:#8cf0ef;
+	margin:0px; 
+}
+figure {
+    background: black;
+    border: 1px solid white;
+    width: 25%;
+    padding: 1%;
+    float: left;
+    margin:3%;
+}
+figure img{
+    width: 100%;
+}
+figcaption {
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 90%;
+}
