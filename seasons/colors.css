@@ -1,0 +1,81 @@
+/* Background colors*/
+body.home {
+  background-color: #694a38;
+}
+body.summer {
+  background-color: #ffa113;
+}
+body.spring {
+  background-color: #aae39f;
+}
+body.fall {
+  background-color: #ac5c05;
+}
+body.winter {
+  background-color: #9ab1bd;
+}
+/* Nav and Footer Background Colors */
+body.home nav {
+  background-color: #3a3f3a;
+}
+body.home header,
+body.home footer {
+  background-color: #114b5f;
+  color: white;
+}
+body.spring nav,
+body.spring footer {
+  background-color: #72ca7e;
+}
+body.summer nav,
+body.summer footer {
+  background-color: #ffd409;
+}
+body.fall nav,
+body.fall footer {
+  background-color: #ee8609;
+}
+body.winter nav,
+body.winter footer {
+  background-color: #d9f2f6;
+}
+
+/* Nav Hover Colors */
+body.home nav a:hover {
+  background-color: #464c46;
+}
+body.spring nav a:hover {
+  background-color: #75af4b;
+}
+body.summer nav a:hover {
+  background-color: #fdec97;
+}
+body.fall nav a:hover {
+  background-color: #feb302;
+}
+body.winter nav a:hover {
+  background-color: #808f97;
+}
+/* Nav and footer text colors */
+body.summer nav a,
+body.winter nav a,
+body.summer footer,
+body.winter footer {
+  color: black;
+}
+
+/* Section Colors */
+article {
+  background-color: #d0cfec;
+  color: black;
+}
+aside, section {
+  background-color: #78a1bb;
+}
+@media screen and (max-width: 600px) {
+  aside,
+  section {
+    background-color: #d0cfec;
+    color: black;
+  }
+}
