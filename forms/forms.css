@@ -1,0 +1,19 @@
+/*input {
+    display:block;
+    width:100%;
+}
+input#fname, input#lname {
+    display: inline;
+    width: 49%;
+    margin: auto;
+}
+input#box {
+    display: inline;
+    width: 5%
+}
+label{
+    display: inline;
+}*/
+header, nav, section, footer {
+    padding: 20px
+}

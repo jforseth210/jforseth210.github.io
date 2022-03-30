@@ -1,0 +1,117 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #ddd;
+  font-family: Arial;
+}
+#wrap {
+  margin: 0 auto;
+  width: 75%;
+}
+
+header {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+}
+nav {
+  background-color: red;
+  padding: 20px;
+  text-align: center;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+nav a:hover {
+  background-color: maroon;
+}
+section {
+  background-color: green;
+  overflow: auto;
+}
+aside {
+  background-color: green;
+  float: left;
+  width: 25%;
+  padding: 2%, 0, 0, 0;
+}
+aside ul {
+  margin: 0;
+  padding: 0;
+}
+aside li {
+  list-style-type: none;
+}
+aside a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+}
+aside a:hover {
+  background-color: darkgreen;
+}
+article {
+  background-color: orchid;
+  float: right;
+  width: 67%;
+  padding: 2% 4%;
+}
+
+footer {
+  width: 100%;
+  background-color: plum;
+}
+.yesbird {
+  width: 35%;
+  float: right;
+  margin: 0 0 20px 40px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  #wrap {
+    width: 100%;
+  }
+  nav li {
+    display: block;
+  }
+  nav {
+    padding:0;
+  }
+  nav a {
+    display: block;
+  }
+  nav a:hover {
+    background-color: transparent;
+  }
+  aside, article {
+    float: none;
+    width: 100%;
+    padding: 0
+  }
+  aside a {
+    text-align: center;
+    padding: 10px
+  }
+  .yesbird {
+    float: none;
+    width: 90%;
+    margin: 10px;
+  }
+}

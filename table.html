@@ -1,0 +1,121 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="template.css" type="text/css">
+
+    <!-- 
+        Global site tag (gtag.js) - Google Analytics 
+        There, Google, you've successfully embedded 
+        you tentacles into one of my projects. Don't
+        get too comfortable... all of this disappears
+        at the end of the semester. 
+    -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-31B72Q6FDX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-31B72Q6FDX');
+    </script>
+    <style>
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        tbody tr:nth-child(odd){
+            background-color: #abc;
+        }
+
+        thead {
+            font-weight: bold;
+            background-color: purple;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <table>
+            <thead>
+                <tr>
+                    <td>Number</td>
+                    <td colspan="2">Name</td>
+                    <td>Position</td>
+                    <td>Bats</td>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>7</td>
+                    <td>Paldi</td>
+                    <td>Block</td>
+                    <td>OF</td>
+                    <td>R</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Garcia</td>
+                    <td>Danny</td>
+                    <td>C</td>
+                    <td>L</td>
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td>Denegar</td>
+                    <td>Andrew</td>
+                    <td>P</td>
+                    <td>R</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Brown</td>
+                    <td>Jake</td>
+                    <td>SS</td>
+                    <td>R</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Paldi</td>
+                    <td>Block</td>
+                    <td>OF</td>
+                    <td>R</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Garcia</td>
+                    <td>Danny</td>
+                    <td>C</td>
+                    <td>L</td>
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td>Denegar</td>
+                    <td>Andrew</td>
+                    <td>P</td>
+                    <td>R</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Brown</td>
+                    <td>Jake</td>
+                    <td>SS</td>
+                    <td>R</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--End wrap-->
+</body>
+
+</html>
