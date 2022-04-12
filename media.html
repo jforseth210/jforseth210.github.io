@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Media</title>
     <link rel="stylesheet" href="media.css" type="text/css">
+    <link rel="stylesheet" href="reveal.css">
 
     <!-- 
         Global site tag (gtag.js) - Google Analytics 
@@ -12,6 +13,8 @@
         get too comfortable... all of this disappears
         at the end of the semester. 
     -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+    <script type="text/javascript" src="jquery.reveal.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-31B72Q6FDX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -51,7 +54,9 @@
             <article>
                 <h1>Media Page</h1>
                 <p>
-                    <img src="bluebird.jpg" alt="bluebird" title="This is a bird" class="yesbird" />
+                    <a href="#" class="big-link" data-reveal-id="chuckBird">
+                        <img src="bluebird.jpg" alt="bluebird" title="This is a bird" class="yesbird" />
+                    </a>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sagittis nibh. Mauris imperdiet
                     lectus vitae felis interdum fermentum. Vestibulum eget sollicitudin nibh, nec bibendum tellus.
                     Curabitur porttitor ex magna, ac cursus turpis lobortis sed. Nullam a feugiat dui. Nullam odio
@@ -62,6 +67,9 @@
                     sodales a, dignissim eu velit. Vivamus non felis nec tortor pretium malesuada. Pellentesque in elit
                     turpis. Donec molestie lorem nec congue faucibus.
                 </p>
+                <a href="#" class="big-link" data-reveal-id="myModal">
+                    See video of a bird
+                </a>
                 <p>
                     Quisque vehicula ligula sem, vel pharetra leo tempor vitae. Aenean ac purus interdum risus tincidunt
                     vehicula. Pellentesque rutrum nulla vitae venenatis viverra. Vestibulum risus enim, pellentesque a
@@ -70,11 +78,23 @@
                     at commodo eros nisi in mi. Sed ut tempus metus. Vestibulum sapien ex, pretium vel ligula bibendum,
                     sollicitudin posuere nisi. Vivamus lobortis ipsum id ligula egestas, ut interdum felis fringilla.
                     Fusce scelerisque, dolor in vulputate luctus, lacus risus egestas libero, ac suscipit nunc odio quis
-                    nulla. Ut quis enim non odio tempus luctus. Phasellus dictum luctus tempus. 
+                    nulla. Ut quis enim non odio tempus luctus. Phasellus dictum luctus tempus.
                 </p>
             </article>
         </section>
-
+        <div id="myModal" class="reveal-modal">
+            <h1>This is not a bird</h1>
+            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="chuckBird" class="reveal-modal">
+            <h1>This <em>is</em> a bird</h1>
+            <img src="bluebird.jpg" alt="bluebird" title="This is a bird" width="100%" />
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
         <footer>
             Footer
         </footer>
