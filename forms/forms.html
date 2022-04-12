@@ -31,27 +31,66 @@
         </nav>
 
         <section>
-            <form method="post" action="/media.html">
-                <label for="fname">First Name</label><br />
-                <input type="text" placeholder="First Name" id="fname" name="fname" /><br />
-                <label for="lname">Last Name</label><br />
-                <input type="text" placeholder="Last Name" id="lname" name="lname" /><br />
-                <label for="email">Email</label><br />
-                <input type="email" placeholder="someone@example.com" id="email" name="email" /><br />
-                <label for="phone">Phone Number</label><br />
-                <input type="tel" placeholder="+1 (555) 555-5555" id="phone" name="phone" /><br />
-                <p>How'd you hear about this website?</p>
+            <form method="get" action="/media.html">
+                <fieldset>
+                    <legend>Fill out this form</legend>
+                    <label for="fname">First Name</label><br />
+                    <input type="text" placeholder="John" id="fname" name="fname" /><br />
+                    <label for="lname">Last Name</label><br />
+                    <input type="text" placeholder="Smith" id="lname" name="lname" /><br />
+                    <label for="email">Email</label><br />
+                    <input type="email" placeholder="someone@example.com" id="email" name="email" /><br />
+                    <label for="phone">Phone Number</label><br />
+                    <input type="tel" placeholder="+1 (555) 555-5555" id="phone" name="phone" /><br />
+                    <p>How'd you hear about this website?</p>
 
-                <input type="checkbox" id="birdie" name="howhear"><label for="birdie">Little birdie told me</label><br/>
-                <input type="checkbox" id="whohasnt" name="howhear"><label for="whohasnt">Are you kidding, who hasn't?</label><br/>
-                <input type="checkbox" id="links" name="howhear"><label for="links">Clicked a bunch of random links and now I'm here...</label><br/>
-                <input type="checkbox" id="checkout" name="howhear"><label for="checkout">You were like, dude, check out this form</label><br/>
-                <input type="checkbox" id="sham" name="howhear"><label for="sham">I dunno, Sham probably maybe?</label><br/>
-                <input type="checkbox" id="price" name="howhear"><label for="price">A Nigerian price wrote me a letter about your site</label><br/>
-                <br /><br />
-                <input type="checkbox" id="box" /><label for="box">Do you want us to send you spam?</label><br />
-                <input type="submit" />
+                    <input type="checkbox" value="birdie" id="birdie" name="howhear"><label for="birdie">Little birdie
+                        told
+                        me</label><br />
+                    <input type="checkbox" value="who hasn't" id="whohasnt" name="howhear"><label for="whohasnt">Are you
+                        kidding, who hasn't?</label><br />
+                    <input type="checkbox" value="random links" id="links" name="howhear"><label for="links">Clicked a
+                        bunch
+                        of random links and
+                        now I'm here...</label><br />
+                    <input type="checkbox" value="check out" id="checkout" name="howhear"><label for="checkout">You were
+                        like, dude, check out this form</label><br />
+                    <input type="checkbox" value="Sham?" id="sham" name="howhear"><label for="sham">I dunno, Sham
+                        probably
+                        maybe?</label><br />
+                    <input type="checkbox" value="prince" id="price" name="howhear"><label for="price">A Nigerian price
+                        wrote me an email about your site</label><br />
+                    <br /><br />
+                    <input type="checkbox" id="box" /><label for="box">Do you want us to send you spam?</label><br />
+                    <p>Have you been to this site before?</p>
+                    <input type="radio" name="before" id="yes"><label for="yes">Yes</label><br>
+                    <input type="radio" name="before" id="no"><label for="no">No</label><br>
+                    <input type="radio" name="before" id="idk"><label for="idk">IDK</label><br>
+                    <p>What is your favorite day?</p>
+                    <select name="favday" id="favday">
+                        <option value="choose" selected>Select a Day</option>
+                        <option value="sunday">Sunday</option>
+                        <option value="monday">Monday</option>
+                        <option value="tuesday">Tuesday</option>
+                        <option value="wednesday">Wednesday</option>
+                        <option value="thursday">Thursday</option>
+                        <option value="friday">Friday</option>
+                        <option value="saturday">Saturday</option>
+                    </select><br>
+                    <p>Leave a Comment</p>
+                    <textarea placeholder="Leave your comment" name="comments" id="comments" cols="30"
+                        rows="10"></textarea><br>
+                    <p>
+                        <input type="submit" value="Submit Your Feedback" />
+                    </p>
+                </fieldset>
             </form>
+        </section>
+        <section>
+            <div class='embed-container'><iframe
+                    src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.6073519614015!2d-111.98363188511186!3d47.61432409543876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53428bcc1daf86e7%3A0x5132507170157317!2sCozy%20Corner%20Cafe!5e0!3m2!1sen!2sus!4v1649174796980!5m2!1sen!2sus'
+                    width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy'
+                    referrerpolicy='no-referrer-when-downgrade'></iframe></div>
         </section>
 
         <footer>Footer

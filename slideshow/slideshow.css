@@ -1,0 +1,14 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #ddd;
+}
+#wrap {
+    margin: 0 auto;
+    width: 75%;
+}
+
+header, nav, section, footer {
+    background: white;
+    margin: 10px;
+}
