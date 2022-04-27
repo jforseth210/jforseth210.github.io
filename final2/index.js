@@ -1,5 +1,6 @@
 let searchbox = document.getElementById("searchbox");
 let videos = document.getElementsByClassName("video");
+// Reset the search when clicking the "logo"
 document.getElementById("newtube").addEventListener("click", function () {
     searchbox.focus();
     for (let i = 0; i < videos.length; i++) {
@@ -8,21 +9,27 @@ document.getElementById("newtube").addEventListener("click", function () {
     }
     searchbox.value = "";
 })
+// Search
 searchbox.addEventListener("input", function () {
     let query = searchbox.value.toLowerCase();
     if (query.indexOf("egg") != -1) {
+        // Display easter egg
         $("#easterEggModal").modal("show");
+        // Autoplay video
+        document.getElementById("rickroll").src += "?autoplay=1";
     }
+    // Filter out videos that don't have the search term in the title
     for (let i = 0; i < videos.length; i++) {
         const video = videos[i];
         const title = video.getElementsByClassName("video-title")[0].innerHTML;
-        if (title.indexOf(query) == -1) {
+        if (title.toLowerCase().indexOf(query) == -1) {
             video.classList.add("d-none");
         } else {
             video.classList.remove("d-none");
         }
     }
 })
+// Filter by categories
 let categories = document.getElementsByClassName("category");
 for (let i = 0; i < categories.length; i++) {
     const category = categories[i];
