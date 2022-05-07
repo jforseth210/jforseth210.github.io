@@ -13,10 +13,10 @@ document.getElementById("newtube").addEventListener("click", function () {
 searchbox.addEventListener("input", function () {
     let query = searchbox.value.toLowerCase();
     if (query.indexOf("egg") != -1) {
-        // Display easter egg
-        $("#easterEggModal").modal("show");
         // Autoplay video
         document.getElementById("rickroll").src += "?autoplay=1";
+        // Display easter egg
+        $("#easterEggModal").modal("show");
     }
     // Filter out videos that don't have the search term in the title
     for (let i = 0; i < videos.length; i++) {
